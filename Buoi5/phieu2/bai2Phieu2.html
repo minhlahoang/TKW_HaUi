@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2-Phieu2</title>
+</head>
+<body>
+  
+    <button onlick="bam(1)">1</button>
+    <button onclick="bam(2)">2</button>
+    <button onclick="bam(3)">3</button>
+    <button onclick="bam(4)">4</button>
+    <button onclick="bam(5)">5</button>
+    <button onclick="plus()">+</button>
+    <br>
+    
+    <button  onclick="bam(6)">6</button>
+    <button onclick="bam(7)">7</button>
+    <button onclick="bam(8)">8</button>
+    <button onclick="bam(9)">9</button>
+    <button onclick="bam(0)">0</button>
+    <button onclick="tinh()">=</button>
+    <br>
+    <span style="color: blue;">KẾT QUẢ TỔNG 2 SỐ: </span>
+    <span style="color: red; " id="result"></span>
+
+    <script>
+        var sum = 0;
+        var a = 0;
+        function bam(x){
+            //a nhan gtri cua event onClick
+            a = x;
+        }
+        function plus(){
+            //cong don thanh tong
+            sum += a;
+        }
+        function tinh(){
+            var kq = document.getElementById("result");
+            //in ra ket qua vao the span co id result
+            kq.textContent = sum + a;
+            //clear lai 2 gtri cua sum va a ve 0
+            sum = 0;
+            a = 0;
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1- Phieu1</title>
+</head>
+<body>
+    Ngày tháng năm sinh:
+    
+    Ngày <select name="day" id="day"> </select>
+    Tháng <select name="month" id="month"></select>
+    Năm <select name="year" id="year" ></select>
+    <script>
+        //lay du lieu tu element day month year :>
+        var selectDay = document.getElementById("day");
+        var selectMonth = document.getElementById("month");
+        var selectYear = document.getElementById("year");
+        // co the dung loop khac 
+        
+        for(var i = 1; i <= 31; i++){
+            //tao them them the option cho select 
+            var option = document.createElement("option");
+            //gia tri value cho the option tu 1 -> 31
+            option.value = i;
+            //hien thi option tu 1 -> 31
+            option.textContent = i;
+            //them option cho select r quay lai vong lap cho toi het
+            selectDay.appendChild(option);
+        }
+
+        for(var i = 1; i <= 12; i++){
+            var option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+            selectMonth.appendChild(option);
+        }
+
+        for(var i = 1900; i <= 2022; i++){
+            var option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+            selectYear.appendChild(option);
+        }
+    </script>
+</body>
+
+</html>

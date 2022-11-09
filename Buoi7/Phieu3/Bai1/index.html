@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            margin: 4px;
+        }
+
+        .red {
+            background: red;
+        }
+        .blue {
+            background: blue;
+        }
+        .green {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <b>Mouse over the sqaures and the background color will change!</b>
+    <div class="container">
+        <div class="square red" onmouseover="onChangeBgRed()" onmouseout="resetColor()"></div>
+        <div class="square blue" onmouseover="onChangeBgBlue()" onmouseout="resetColor()"></div>
+        <div class="square green" onmouseover="onChangeBgGreen()" onmouseout="resetColor()"></div>
+    </div>
+
+    <script>
+        function onChangeBgRed() {
+            document.body.style.background = "red";
+            document.body.style.transition = "1s";
+        }
+        function onChangeBgBlue() {
+            document.body.style.background = "blue";
+            document.body.style.transition = "1s";
+        }
+        function onChangeBgGreen() {
+            document.body.style.background = "green";
+            document.body.style.transition = "1s";
+        }
+        function resetColor() {
+            document.body.style.background = "white";
+            document.body.style.transition = "1s";
+        }
+    </script>
+</body>
+</html>
