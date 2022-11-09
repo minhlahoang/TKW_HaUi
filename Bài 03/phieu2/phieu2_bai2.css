@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+	box-sizing: border-box;	
+    margin: 0;
+	font-family: Tahoma;
+}
+
+
+body {
+    background-color: #A06D21;
+    height: 500vh;
+}
+div {
+    height: 500px;
+    background-image: url(./background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+	color: yellow;	
+	text-align: center;
+}
+
+p {
+	color: white;	
+}

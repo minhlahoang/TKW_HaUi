@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: #336699;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+.gioHang{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0 0.6px;
+    border-style: solid;
+    padding: 20px;
+    border-color: white;
+    color: white;
+}
+.gioHang p {
+    margin-right: 10px;
+}
+
+.header_giua{
+    width: 60%;
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ininput {
+    height: 40%;
+    width: 80%;
+    display: flex;
+}
+input {
+    border: none;
+    width: 50%;
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.sl {
+    border: none;
+    width: 30%;
+    font-size: 14px;
+}
+button {
+    width: 20%;
+    border: none;
+    background-color: rgb(27, 31, 56);
+    color: white;
+}
+.header_phai{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+#menu {
+    margin-top: 30px;
+    display: flex;
+}
+#menu .main {
+    margin-right: 50px;
+    width: 20%;
+    height: 100%;
+    border: 1px solid #ccc;
+
+}
+#menu .main li {
+    list-style: none;
+}
+
+
+
+.main li a {
+    color: black;
+    padding-left: 10px;
+    line-height: 40px;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+}
+
+.main li:hover > a {
+    color: #336699;
+}
+
+
+.main > ul > li:first-child > a{
+    background-color: #336699;
+    color: white;
+}
+.main .cha {
+    position: relative;
+}
+.main .cha:hover .con {
+    display: block;
+}
+.con {
+    border: 1px solid #ccc;
+    position: absolute;
+    min-width: 120px;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.sanpham {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cot {
+    margin-bottom: 30px;
+}
+.cot .dong_content{
+    margin-top: 20px;
+}
+
+.dong_content a {
+    color: black;
+    text-decoration: none;
+}
+.dong_content p {
+    margin-top: 10px;
+}
+.giam {
+    color: red;
+}
+
+.cot a:hover {
+    color: red;
+}
+.img_sp {
+    width: 100%;
+    height: 200px;
+}
+.giamgia {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFD2FF;
+}
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}

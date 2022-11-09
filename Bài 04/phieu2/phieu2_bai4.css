@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu > li {
+    padding: 20px;
+    list-style: none;
+    width: 200px;
+    background-color: blue;
+    border-top: 1px solid rgb(105, 105, 105);
+}
+.menu > li:hover {
+    background-color: red;
+}
+.menu > li > a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+.menu > li {
+    background-color: blue;
+    padding: 20px;
+    border-right: 1px solid rgb(99, 99, 99);
+    
+}
+.menu > li:hover {
+    background-color: red;
+}
+.menu > li a{
+    text-decoration: none;
+    color: white; 
+}
+.menu > li > .menu-child{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    display: none;
+}
+.menu > li:hover > .menu-child{
+    display: block;
+    display: flex;
+}
+.menu > li > .menu-child > li {
+    background-color: red;
+    padding: 20px;
+}
+.menu > li > .menu-child > li:hover {
+    background-color: red;
+}
